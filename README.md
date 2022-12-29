@@ -1,12 +1,14 @@
 # Phonebook
 
-The web application aims to implement a Node application that returns a hardcoded list of phonebook entries from the address http://localhost:3001/api/persons
+Application's link: https://fullstackopen-phonebook.cyclic.app/
+
+The web application aims to implement a Node application that returns a list of phonebook entries from the address https://fullstackopen-phonebook.cyclic.app/api/persons
 
 The application can be started with the `npm start` command.
 
 The **nodemon** package was installed in order to restart the server whenever changes are made and saved to a file in the source code. The `npm run dev` command was added to run the application and the nodemon _index.js_ file.
 
-A single phonebook entry can be accessed through the http://localhost:3001/api/persons/:id endpoint.
+A single phonebook entry can be accessed through the https://fullstackopen-phonebook.cyclic.app/api/persons/:id endpoint.
 
 The `Number.MAX_SAFE_INTEGER` constant is used as the range when generating a new id for a new phonebook entry so that the likelihood of creating duplicate ids is small.
 

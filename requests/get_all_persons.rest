@@ -1,1 +1,1 @@
-GET http://localhost:3001/info
+GET https://fullstackopen-phonebook.cyclic.app/api/persons

@@ -1,6 +1,7 @@
-POST http://localhost:3001/api/persons
+POST https://fullstackopen-phonebook.cyclic.app/api/persons
 Content-Type: application/json
 
 {
-	"name": "Alf Fonti"
+	"name": "Alf Fonti",
+	"number": "123"
 }
