@@ -1,0 +1,17 @@
+PUT http://localhost:3001/api/persons/63b182b4385acf6a6a0041ac
+Content-Type: application/json
+
+{
+	"name": "Alf Fonti",
+	"number": "123"
+}
+
+###
+
+PUT https://fullstackopen-phonebook.cyclic.app/api/persons/63b182b4385acf6a6a0041ac
+Content-Type: application/json
+
+{
+	"name": "Alf Fonti",
+	"number": "123"
+}
