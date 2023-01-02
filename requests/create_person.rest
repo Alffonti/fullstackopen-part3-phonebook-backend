@@ -2,8 +2,8 @@ POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-	"name": "Alf Fonti",
-	"number": "033-1234567"
+	"name": "Rueben Middleton",
+	"number": "055-1234567"
 }
 
 ###
@@ -12,6 +12,6 @@ POST https://fullstackopen-phonebook.cyclic.app/api/persons
 Content-Type: application/json
 
 {
-	"name": "Alf Fonti",
-	"number": "123"
+	"name": "Rueben Middleton",
+	"number": "055-1234567"
 }

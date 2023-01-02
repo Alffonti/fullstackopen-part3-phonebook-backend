@@ -81,14 +81,41 @@ The communication between the backend and MongoDB was extracted into its own mod
 
 The `findbyId()`, `findByIdAndDelete()`, and `findByIdAndUpdate()` methods were used to get, delete or update a person from the phonebook, respectively.
 
+## Linting
+
+The **ESlint** package was installed as a development dependency in order to perform static analysis of the code.
+
+The `.eslintrc.js` file was created (after answering some configuration questions) by running the following command:
+```
+npx eslint --init
+```
+
+The following npm-script was added to to check every file in the project by ESlint.
+
+```
+{
+  // ...
+  "scripts": {
+    "start": "node index.js",
+    // ...
+    "lint": "eslint ."
+  },
+  // ...
+}
+```
+
+The `build` directory was ignored by ESlint by creating a `.eslintignore` file in the project's root.
+
+The `VSCode ESlint plugin` was installed in order to run the linter continuously and see errors (which are underlined with a red line) in the code immediately.
+
 
 ## Enviroment variables
 
-A `.env` file was created at the root of the project, after installing the **dotenv** library, to define environment variables during develpment mode.
+A `.env` file was created at the root of the project, after installing the **dotenv** library, to define environment variables in development mode.
 
 The environment variables defined in the .env file can be taken into use with the expression `require('dotenv').config()` and can be referenced in the code with the `process.env` syntax.
 
-The environment variables were defined direclty in the Cyclic dashboard to reference those variables during production mode.
+The environment variables were defined direclty in the Cyclic dashboard to reference those variables in production mode.
 
 ## Resources
 
@@ -101,3 +128,5 @@ The environment variables were defined direclty in the Cyclic dashboard to refer
 - [REST Client Usage](https://github.com/Huachao/vscode-restclient/blob/master/README.md#usage)
 
 - [Regular Expressions - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+- [ESlint](https://eslint.org/)

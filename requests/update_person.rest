@@ -12,6 +12,6 @@ PUT https://fullstackopen-phonebook.cyclic.app/api/persons/63b182b4385acf6a6a004
 Content-Type: application/json
 
 {
-	"name": "Alf Fonti",
-	"number": "123"
+	"name": "Rueben Middleton",
+	"number": "081-1234567"
 }
